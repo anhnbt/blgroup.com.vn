@@ -42,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="vi" className={`${inter.variable} h-full antialiased`}>
+    <html lang="vi" data-scroll-behavior="smooth" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans">
         <Header />
         <main className="flex-1 pt-[72px]">{children}</main>
