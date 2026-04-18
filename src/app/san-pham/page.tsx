@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import ScrollAnimation from "@/components/ScrollAnimation";
 
 export const metadata: Metadata = {
@@ -69,8 +70,11 @@ export default function SanPhamPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative dark-section text-white section-padding !pt-20">
-        <div className="absolute inset-0 grid-pattern opacity-50" />
+      <section className="relative dark-section text-white section-padding !pt-32 !pb-24">
+        <div className="absolute inset-0 z-0">
+          <Image src="/images/factory-6.jpg" alt="Sản phẩm Bảo Lâm" fill className="object-cover opacity-20" priority />
+          <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-bg-dark)]/90 via-[var(--color-bg-dark)]/70 to-[var(--color-bg-dark)]" />
+        </div>
         <div className="container-custom relative z-10 max-w-3xl">
           <ScrollAnimation>
             <span className="text-[var(--color-warm)] font-semibold text-sm uppercase tracking-wider">

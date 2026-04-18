@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import ScrollAnimation from "@/components/ScrollAnimation";
 
 export const metadata: Metadata = {
@@ -33,8 +34,11 @@ export default function GioiThieuPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative dark-section text-white section-padding !pt-20">
-        <div className="absolute inset-0 grid-pattern opacity-50" />
+      <section className="relative dark-section text-white section-padding !pt-32 !pb-24">
+        <div className="absolute inset-0 z-0">
+          <Image src="/images/factory-2.jpg" alt="Nhà máy Bảo Lâm" fill className="object-cover opacity-30" priority />
+          <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-bg-dark)]/80 via-[var(--color-bg-dark)]/60 to-[var(--color-bg-dark)]" />
+        </div>
         <div className="container-custom relative z-10 max-w-3xl">
           <ScrollAnimation>
             <span className="text-[var(--color-warm)] font-semibold text-sm uppercase tracking-wider">
@@ -131,8 +135,35 @@ export default function GioiThieuPage() {
         </div>
       </section>
 
-      {/* Timeline */}
+      {/* Facility & Equipment */}
       <section className="section-padding bg-white">
+        <div className="container-custom">
+          <ScrollAnimation>
+            <div className="text-center max-w-2xl mx-auto mb-14">
+              <span className="section-overline">Năng lực sản xuất</span>
+              <h2 className="section-title">Nhà máy & Dây chuyền</h2>
+              <p className="section-subtitle">
+                Trang thiết bị hiện đại, môi trường làm việc an toàn, sạch sẽ đạt tiêu chuẩn quốc tế.
+              </p>
+            </div>
+          </ScrollAnimation>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <ScrollAnimation direction="left">
+              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-gray-100 group">
+                <Image src="/images/factory-3.jpg" alt="Dây chuyền sản xuất" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation direction="right">
+              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-gray-100 group">
+                <Image src="/images/factory-5.jpg" alt="Kiểm tra chất lượng" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+              </div>
+            </ScrollAnimation>
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline */}
+      <section className="section-padding bg-[var(--color-bg-alt)]">
         <div className="container-custom max-w-3xl">
           <ScrollAnimation>
             <div className="text-center mb-14">
