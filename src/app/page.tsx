@@ -268,6 +268,7 @@ export default function HomePage() {
                     src="/images/factory-4.jpg"
                     alt="Nhà máy sản xuất BLG"
                     fill
+                    priority
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
