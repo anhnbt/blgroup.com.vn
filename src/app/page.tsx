@@ -171,7 +171,7 @@ export default function HomePage() {
           <div className="absolute inset-0 grid-pattern opacity-50" />
         </div>
 
-        <div className="container-custom relative z-10 py-20">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px] relative z-10 py-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Text */}
             <div>
@@ -278,11 +278,10 @@ export default function HomePage() {
                     <p className="text-sm text-white/60">2.500m² — Phổ Yên, Thái Nguyên</p>
                   </div>
                 </div>
-                {/* Floating badge */}
                 <motion.div
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute -bottom-2 -left-4 glass-dark rounded-2xl px-5 py-3 flex items-center gap-3 shadow-xl"
+                  className="absolute z-30 -bottom-2 -left-4 glass-dark rounded-2xl px-5 py-3 flex items-center gap-3 shadow-xl"
                 >
                   <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center">
                     <svg className="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -294,11 +293,10 @@ export default function HomePage() {
                     <p className="text-white/50 text-xs">Nhật Bản • Đài Loan</p>
                   </div>
                 </motion.div>
-                {/* Floating badge 2 */}
                 <motion.div
                   animate={{ y: [0, 8, 0] }}
                   transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute -top-2 -right-4 glass-dark rounded-2xl px-5 py-3 flex items-center gap-3 shadow-xl"
+                  className="absolute z-30 -top-2 -right-4 glass-dark rounded-2xl px-5 py-3 flex items-center gap-3 shadow-xl"
                 >
                   <div className="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center text-xl">
                     👷
@@ -316,7 +314,7 @@ export default function HomePage() {
 
       {/* ========== STATS ========== */}
       <section className="relative -mt-16 z-20">
-        <div className="container-custom">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px]">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
             {[
               { number: 2019, suffix: "", label: "Năm thành lập", icon: "📅" },
@@ -341,8 +339,8 @@ export default function HomePage() {
       </section>
 
       {/* ========== ABOUT PREVIEW ========== */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
+      <section className="py-20 md:py-24 lg:py-28 bg-white">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px]">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <ScrollAnimation direction="left">
               <div className="relative">
@@ -392,8 +390,8 @@ export default function HomePage() {
       </section>
 
       {/* ========== PRODUCTS ========== */}
-      <section className="section-padding bg-[var(--color-bg-alt)]">
-        <div className="container-custom">
+      <section className="py-20 md:py-24 lg:py-28 bg-[var(--color-bg-alt)]">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px]">
           <ScrollAnimation>
             <div className="text-center max-w-2xl mx-auto mb-14">
               <span className="section-overline">Sản phẩm</span>
@@ -439,8 +437,8 @@ export default function HomePage() {
       </section>
 
       {/* ========== PROCESS ========== */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
+      <section className="py-20 md:py-24 lg:py-28 bg-white">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px]">
           <ScrollAnimation>
             <div className="text-center max-w-2xl mx-auto mb-14">
               <span className="section-overline">Quy trình</span>
@@ -472,8 +470,8 @@ export default function HomePage() {
       </section>
 
       {/* ========== WHY US ========== */}
-      <section className="section-padding bg-[var(--color-bg-alt)]">
-        <div className="container-custom">
+      <section className="py-20 md:py-24 lg:py-28 bg-[var(--color-bg-alt)]">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px]">
           <ScrollAnimation>
             <div className="text-center max-w-2xl mx-auto mb-14">
               <span className="section-overline">Tại sao chọn chúng tôi</span>
@@ -507,8 +505,8 @@ export default function HomePage() {
       </section>
 
       {/* ========== PARTNERS & MARKETS ========== */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
+      <section className="py-20 md:py-24 lg:py-28 bg-white">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px]">
           <ScrollAnimation>
             <div className="text-center max-w-2xl mx-auto mb-14">
               <span className="section-overline">Thị trường</span>
@@ -545,10 +543,10 @@ export default function HomePage() {
       </section>
 
       {/* ========== CTA ========== */}
-      <section className="relative overflow-hidden dark-section text-white section-padding">
+      <section className="relative overflow-hidden dark-section text-white py-20 md:py-24 lg:py-28">
         <div className="absolute inset-0 grid-pattern opacity-50" />
 
-        <div className="container-custom relative z-10 text-center max-w-3xl mx-auto">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px] relative z-10 text-center max-w-3xl mx-auto">
           <ScrollAnimation>
             <h2 className="text-3xl lg:text-5xl font-bold mb-6 leading-tight">
               Sẵn sàng hợp tác <br />

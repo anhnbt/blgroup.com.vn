@@ -137,11 +137,11 @@ All spacing derives from an **8px base unit**. Use only these values:
 
 ### Container
 
-```css
-max-width: 1280px;  /* Default */
-max-width: 1400px;  /* @media (min-width: 1536px) */
-padding: 0 1.5rem;  /* Side padding */
-margin: 0 auto;     /* Centered */
+Instead of custom CSS, we strictly use standard Tailwind utility classes to prevent CSS inheritance conflicts and ensure predictable rendering in Tailwind v4:
+
+```html
+<!-- Base structure for all layout containers -->
+<div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px]">
 ```
 
 ### Grid System
@@ -414,8 +414,8 @@ Decorative blobs: accent/10 and warm/10 with blur-3xl
 | `.glass` | White glassmorphism (header, overlays) |
 | `.glass-dark` | Dark glassmorphism (floating badges) |
 | `.gradient-text` | Primary-to-accent gradient text |
-| `.container-custom` | Centered container with responsive max-width |
-| `.section-padding` | Responsive vertical section padding |
+
+*Note: Container sizing and section padding are handled purely via standard Tailwind utility classes (e.g., `max-w-7xl`, `px-6`, `py-20 md:py-24`) to prevent shorthand CSS overrides and remain 100% compliant with Tailwind v4 logic.*
 
 ### Component Pattern
 

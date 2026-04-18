@@ -34,12 +34,12 @@ export default function GioiThieuPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative dark-section text-white section-padding !pt-32 !pb-24">
+      <section className="relative dark-section text-white py-20 md:py-24 lg:py-28 !pt-32 !pb-24">
         <div className="absolute inset-0 z-0">
           <Image src="/images/factory-2.jpg" alt="Nhà máy Bảo Lâm" fill className="object-cover opacity-30" priority />
           <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-bg-dark)]/80 via-[var(--color-bg-dark)]/60 to-[var(--color-bg-dark)]" />
         </div>
-        <div className="container-custom relative z-10 max-w-3xl">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px] relative z-10 max-w-3xl">
           <ScrollAnimation>
             <span className="text-[var(--color-warm)] font-semibold text-sm uppercase tracking-wider">
               Về chúng tôi
@@ -58,7 +58,7 @@ export default function GioiThieuPage() {
 
       {/* Factory Capabilities Bar */}
       <section className="relative -mt-12 z-20">
-        <div className="container-custom">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px]">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             {capabilities.map((cap, i) => (
               <ScrollAnimation key={cap.label} delay={i * 0.1}>
@@ -74,8 +74,8 @@ export default function GioiThieuPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
+      <section className="py-20 md:py-24 lg:py-28 bg-white">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px]">
           <div className="grid md:grid-cols-2 gap-8">
             <ScrollAnimation direction="left">
               <div className="p-8 rounded-2xl bg-gradient-to-br from-[var(--color-accent)]/5 to-[var(--color-primary)]/5 border border-[var(--color-accent)]/10 h-full">
@@ -112,8 +112,8 @@ export default function GioiThieuPage() {
       </section>
 
       {/* Core values */}
-      <section className="section-padding bg-[var(--color-bg-alt)]">
-        <div className="container-custom">
+      <section className="py-20 md:py-24 lg:py-28 bg-[var(--color-bg-alt)]">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px]">
           <ScrollAnimation>
             <div className="text-center max-w-2xl mx-auto mb-14">
               <span className="section-overline">Giá trị cốt lõi</span>
@@ -136,8 +136,8 @@ export default function GioiThieuPage() {
       </section>
 
       {/* Facility & Equipment */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
+      <section className="py-20 md:py-24 lg:py-28 bg-white">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px]">
           <ScrollAnimation>
             <div className="text-center max-w-2xl mx-auto mb-14">
               <span className="section-overline">Năng lực sản xuất</span>
@@ -163,8 +163,8 @@ export default function GioiThieuPage() {
       </section>
 
       {/* Timeline */}
-      <section className="section-padding bg-[var(--color-bg-alt)]">
-        <div className="container-custom max-w-3xl">
+      <section className="py-20 md:py-24 lg:py-28 bg-[var(--color-bg-alt)]">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px] max-w-3xl">
           <ScrollAnimation>
             <div className="text-center mb-14">
               <span className="section-overline">Lịch sử phát triển</span>
@@ -196,9 +196,9 @@ export default function GioiThieuPage() {
       </section>
 
       {/* CTA */}
-      <section className="dark-section section-padding">
+      <section className="dark-section py-20 md:py-24 lg:py-28">
         <div className="absolute inset-0 grid-pattern opacity-50" />
-        <div className="container-custom relative z-10 text-center max-w-2xl mx-auto">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px] relative z-10 text-center max-w-2xl mx-auto">
           <ScrollAnimation>
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 leading-tight">
               Muốn tìm hiểu thêm về{" "}

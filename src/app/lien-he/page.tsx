@@ -57,9 +57,9 @@ export default function LienHePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative dark-section text-white section-padding !pt-20">
+      <section className="relative dark-section text-white py-20 md:py-24 lg:py-28 !pt-20">
         <div className="absolute inset-0 grid-pattern opacity-50" />
-        <div className="container-custom relative z-10 max-w-3xl">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px] relative z-10 max-w-3xl">
           <ScrollAnimation>
             <span className="text-[var(--color-warm)] font-semibold text-sm uppercase tracking-wider">
               Liên hệ
@@ -76,8 +76,8 @@ export default function LienHePage() {
       </section>
 
       {/* Contact section */}
-      <section className="section-padding bg-[var(--color-bg-alt)]">
-        <div className="container-custom">
+      <section className="py-20 md:py-24 lg:py-28 bg-[var(--color-bg-alt)]">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px]">
           <div className="grid lg:grid-cols-5 gap-10 lg:gap-14">
             {/* Info */}
             <div className="lg:col-span-2">

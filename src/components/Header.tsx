@@ -25,7 +25,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/20">
-      <nav className="container-custom flex items-center justify-between h-[72px]">
+      <nav className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px] flex items-center justify-between h-[72px]">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
           <Image
@@ -107,7 +107,7 @@ export default function Header() {
             transition={{ duration: 0.3 }}
             className="lg:hidden overflow-hidden glass border-t border-white/20"
           >
-            <ul className="container-custom py-4 flex flex-col gap-1">
+            <ul className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px] py-4 flex flex-col gap-1">
               {navLinks.map((link, i) => (
                 <motion.li
                   key={link.href}

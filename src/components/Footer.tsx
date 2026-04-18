@@ -43,7 +43,7 @@ export default function Footer() {
       <footer className="bg-[var(--color-bg-dark)] text-white">
         {/* Newsletter strip */}
         <div className="border-b border-white/10">
-          <div className="container-custom py-16 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px] py-4 flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-xl bg-[var(--color-accent)]/20 flex items-center justify-center text-xl shrink-0">
                 📧
@@ -66,7 +66,7 @@ export default function Footer() {
         </div>
 
         {/* Main footer */}
-        <div className="container-custom section-padding !pb-12">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px] py-20 md:py-24 lg:py-28 !pb-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 lg:gap-12">
             {/* Brand */}
             <div className="lg:col-span-1">
@@ -163,7 +163,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/10">
-          <div className="container-custom flex flex-col md:flex-row items-center justify-between py-10 gap-3">
+          <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px] flex flex-col md:flex-row items-center justify-between py-2 gap-3">
             <p className="text-gray-500 text-sm text-center md:text-left">
               © {new Date().getFullYear()} Công ty CP may Bảo Lâm. All rights reserved.
             </p>
@@ -178,9 +178,8 @@ export default function Footer() {
       <button
         onClick={scrollToTop}
         aria-label="Lên đầu trang"
-        className={`fixed bottom-6 right-6 w-12 h-12 rounded-xl bg-[var(--color-primary)] text-white shadow-xl flex items-center justify-center z-40 hover:bg-[var(--color-accent)] hover:-translate-y-1 transition-all duration-300 ${
-          showTop ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
-        }`}
+        className={`fixed bottom-6 right-6 w-12 h-12 rounded-xl bg-[var(--color-primary)] text-white shadow-xl flex items-center justify-center z-40 hover:bg-[var(--color-accent)] hover:-translate-y-1 transition-all duration-300 ${showTop ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
+          }`}
       >
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" />

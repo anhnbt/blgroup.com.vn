@@ -70,12 +70,12 @@ export default function SanPhamPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative dark-section text-white section-padding !pt-32 !pb-24">
+      <section className="relative dark-section text-white py-20 md:py-24 lg:py-28 !pt-32 !pb-24">
         <div className="absolute inset-0 z-0">
           <Image src="/images/factory-6.jpg" alt="Sản phẩm Bảo Lâm" fill className="object-cover opacity-20" priority />
           <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-bg-dark)]/90 via-[var(--color-bg-dark)]/70 to-[var(--color-bg-dark)]" />
         </div>
-        <div className="container-custom relative z-10 max-w-3xl">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px] relative z-10 max-w-3xl">
           <ScrollAnimation>
             <span className="text-[var(--color-warm)] font-semibold text-sm uppercase tracking-wider">
               Sản phẩm
@@ -93,7 +93,7 @@ export default function SanPhamPage() {
 
       {/* Services bar */}
       <section className="relative -mt-12 z-20">
-        <div className="container-custom">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px]">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             {services.map((svc, i) => (
               <ScrollAnimation key={svc.title} delay={i * 0.1}>
@@ -109,8 +109,8 @@ export default function SanPhamPage() {
       </section>
 
       {/* Products grid */}
-      <section className="section-padding bg-[var(--color-bg-alt)]">
-        <div className="container-custom">
+      <section className="py-20 md:py-24 lg:py-28 bg-[var(--color-bg-alt)]">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px]">
           <ScrollAnimation>
             <div className="text-center max-w-2xl mx-auto mb-14">
               <span className="section-overline">Danh mục</span>
@@ -162,9 +162,9 @@ export default function SanPhamPage() {
       </section>
 
       {/* CTA */}
-      <section className="dark-section section-padding">
+      <section className="dark-section py-20 md:py-24 lg:py-28">
         <div className="absolute inset-0 grid-pattern opacity-50" />
-        <div className="container-custom relative z-10 text-center max-w-2xl mx-auto">
+        <div className="w-full max-w-7xl mx-auto px-6 2xl:max-w-[1400px] relative z-10 text-center max-w-2xl mx-auto">
           <ScrollAnimation>
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 leading-tight">
               Bạn cần sản phẩm{" "}
